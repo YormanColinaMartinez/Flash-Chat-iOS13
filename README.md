@@ -1,7 +1,5 @@
 # Flash-Chat
 
-Lograr# Flash-Chat
-
 Flash-Chat es una aplicación de mensajería en tiempo real diseñada para facilitar la comunicación entre usuarios. Con una interfaz intuitiva y una experiencia de usuario fluida, permite a los participantes registrarse y participar en un chat único, donde pueden ver y enviar mensajes en tiempo real.
 
 ## Características
