@@ -4,52 +4,53 @@
 
 ## Our Goal
 
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
+Lograr contruir una app de mensajeria que le permita a un usuario iniciar sesion por medio de la autenticacion de Firebase y GoogleSignIn tener acceso al chat único de la app, poder enviar mensajes y listarlos en un UITabl# Flash-Chat
 
-## What you will create
+Flash-Chat es una aplicación de mensajería en tiempo real que permite a los usuarios registrarse y participar en un chat único, donde pueden ver y enviar mensajes de otros usuarios. Diseñada para ser intuitiva y fácil de usar, Flash-Chat brinda una experiencia de comunicación fluida y efectiva.
 
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
+## Características
 
-## What you will learn
+- **Registro y Autenticación**: Los usuarios pueden crear una cuenta o iniciar sesión utilizando su correo electrónico y contraseña. Además, tienen la opción de autenticarse rápidamente a través de Google, lo que simplifica el proceso de acceso.
+  
+- **Pantalla de Bienvenida**: La aplicación comienza con una pantalla de bienvenida que incluye botones de registro y inicio de sesión. Esto permite a los nuevos usuarios acceder fácilmente a la funcionalidad que ofrece Flash-Chat.
 
-* How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
-* How to store data in the cloud using Firebase Firestore.
-* How to query and sort the Firebase database.
-* How to use Firebase for user authentication, registration and login.
-* How to work with UITableViews and how to set their data sources and delegates.
-* How to create custom views using .xib files to modify native design components.
-* How to embed View Controllers in a Navigation Controller and understand the navigation stack.
-* How to create a constants file and use static properties to store Strings and other constants.
-* Learn about Swift loops and create animations using loops.
-* Learn about the App Lifecycle and how to use viewWillAppear or viewWillDisappear.
-* How to create direct Segues for navigation.
+- **Interfaz de Chat**: Después de la autenticación exitosa, los usuarios son dirigidos a la pantalla principal del chat, donde pueden visualizar todos los mensajes enviados por otros usuarios. Esta vista se implementa mediante un `tableView`, lo que permite un desplazamiento suave y una mejor organización de los mensajes.
 
+- **Mensajes en Tiempo Real**: Los mensajes se almacenan en Firebase Database y se actualizan en tiempo real. Esto significa que los usuarios pueden ver los mensajes recién enviados de inmediato, sin necesidad de recargar la pantalla.
 
-# Constants
-```
-struct K {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat"
-    static let loginSegue = "LoginToChat"
-    
-    struct BrandColors {
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lighBlue = "BrandLightBlue"
-    }
-    
-    struct FStore {
-        static let collectionName = "messages"
-        static let senderField = "sender"
-        static let bodyField = "body"
-        static let dateField = "date"
-    }
-}
+- **Perfil de Usuario**: Cada mensaje enviado incluye la foto de perfil del usuario, lo que agrega un toque personal a la experiencia de chat y facilita la identificación de los participantes.
 
-```
+- **Enviar Mensajes**: Los usuarios pueden enviar mensajes de forma rápida y sencilla. Al enviar un mensaje, este aparece de inmediato en el `tableView`, permitiendo una interacción instantánea.
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+- **Cierre de Sesión**: Los usuarios tienen la opción de cerrar sesión en cualquier momento, regresando a la pantalla de inicio. Esto proporciona un control completo sobre su sesión.
+
+## Tecnologías Utilizadas
+
+- **Firebase**: Utilizado para la autenticación de usuarios y el almacenamiento de mensajes en tiempo real. Firebase proporciona una infraestructura sólida y escalable, garantizando la seguridad de los datos.
+
+- **TableView**: Implementado para la visualización de mensajes, permitiendo una experiencia de usuario optimizada con desplazamiento fluido.
+
+## Capturas de Pantalla
+
+*(Puedes agregar imágenes aquí, por ejemplo:)*
+
+![Pantalla de bienvenida](ruta/a/la/imagen/bienvenida.png)
+![Pantalla de chat](ruta/a/la/imagen/chat.png)
+
+## Instalación
+
+1. Clona este repositorio.
+2. Asegúrate de tener configurada Firebase en tu proyecto.
+3. Instala las dependencias necesarias.
+4. Ejecuta la aplicación en tu dispositivo o emulador.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas colaborar, por favor, crea un fork del repositorio y envía un pull request con tus mejoras o correcciones.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
 
 ![End Banner](Documentation/readme-end-banner.png)
