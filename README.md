@@ -4,7 +4,7 @@
 
 ## Our Goal
 
-Lograr contruir una app de mensajeria que le permita a un usuario iniciar sesion por medio de la autenticacion de Firebase y GoogleSignIn tener acceso al chat único de la app, poder enviar mensajes y listarlos en un UITabl# Flash-Chat
+Lograr contruir una app de mensajeria que le permita a un usuario iniciar sesion por medio de la autenticacion de Firebase y GoogleSignIn tener acceso al chat único de la app, poder enviar mensajes y listarlos en un UITableView Flash-Chat
 
 Flash-Chat es una aplicación de mensajería en tiempo real que permite a los usuarios registrarse y participar en un chat único, donde pueden ver y enviar mensajes de otros usuarios. Diseñada para ser intuitiva y fácil de usar, Flash-Chat brinda una experiencia de comunicación fluida y efectiva.
 
