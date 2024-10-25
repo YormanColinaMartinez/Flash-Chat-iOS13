@@ -93,6 +93,7 @@ class ChatViewController: UIViewController {
     
     func emptyTextField() {
         self.messageTextView.text = Strings.empty
+        labelPlaceholder.isHidden = false
     }
     
     //MARK: - @IBActions -

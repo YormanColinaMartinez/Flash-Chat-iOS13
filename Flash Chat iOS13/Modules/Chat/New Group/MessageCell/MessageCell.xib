@@ -18,14 +18,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="278" height="119"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dmv-NW-CUh">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact-without-photo-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Dmv-NW-CUh">
                         <rect key="frame" x="10" y="10" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="fmc-Ph-1kA"/>
                             <constraint firstAttribute="width" constant="40" id="zbs-4Z-hSu"/>
                         </constraints>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EMg-T2-sog">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me-avatar-icon" translatesAutoresizingMaskIntoConstraints="NO" id="EMg-T2-sog">
                         <rect key="frame" x="228" y="10" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="2Qf-M0-Qgo"/>
@@ -74,6 +74,8 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="contact-without-photo-icon" width="236" height="236"/>
+        <image name="me-avatar-icon" width="36" height="36"/>
         <namedColor name="BrandLightPurple">
             <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
