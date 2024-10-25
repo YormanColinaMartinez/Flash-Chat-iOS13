@@ -40,8 +40,14 @@ Flash-Chat está construida utilizando la arquitectura **MVVM (Model-View-ViewMo
 
 *(Puedes agregar imágenes aquí, por ejemplo:)*
 
-![Pantalla de bienvenida](ruta/a/la/imagen/bienvenida.png)
-![Pantalla de chat](ruta/a/la/imagen/chat.png)
+## Pantalla de Bienvenida
+<img src="https://github.com/YormanColinaMartinez/Flash-Chat-iOS13/blob/master/Flash%20Chat%20iOS13/Resources/Images/WelcomeView.png?raw=true" alt="Login View" width="300" height="600"/>
+
+## Pantalla de Registro
+<img src="https://github.com/YormanColinaMartinez/Flash-Chat-iOS13/blob/master/Flash%20Chat%20iOS13/Resources/Images/RegisterView.png?raw=true" alt="Login View" width="300" height="600"/>
+
+## Pantalla de Login
+<img src="https://github.com/YormanColinaMartinez/Flash-Chat-iOS13/blob/master/Flash%20Chat%20iOS13/Resources/Images/LoginView.png?raw=true" alt="Login View" width="300" height="600"/>
 
 ## Instalación
 
