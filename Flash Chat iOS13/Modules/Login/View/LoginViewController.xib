@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target">
+            <connections>
+                <outlet property="emailContainerView" destination="Mjn-ro-Gwe" id="ON6-eN-MI9"/>
+                <outlet property="emailTextfield" destination="15H-Xq-EeW" id="NqN-mQ-VnG"/>
+                <outlet property="googleButton" destination="etn-IM-sSU" id="QH7-Jn-f4p"/>
+                <outlet property="loginButton" destination="bLu-Rt-3bO" id="tWB-0R-ktC"/>
+                <outlet property="passwordContainerView" destination="Ap9-3a-QW6" id="RsI-ZR-U7D"/>
+                <outlet property="passwordTextfield" destination="qVK-FD-h1x" id="sph-sL-oxZ"/>
+                <outlet property="titleLabel" destination="cua-Yj-moa" id="jwW-XE-nRn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjn-ro-Gwe">
+                    <rect key="frame" x="30" y="468" width="333" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="15H-Xq-EeW">
+                            <rect key="frame" x="10" y="0.0" width="313" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="15H-Xq-EeW" secondAttribute="bottom" id="ET8-dH-li3"/>
+                        <constraint firstItem="15H-Xq-EeW" firstAttribute="top" secondItem="Mjn-ro-Gwe" secondAttribute="top" id="WFp-2c-syf"/>
+                        <constraint firstAttribute="height" constant="50" id="hXU-TZ-SzN"/>
+                        <constraint firstAttribute="trailing" secondItem="15H-Xq-EeW" secondAttribute="trailing" constant="10" id="yCT-cj-KxJ"/>
+                        <constraint firstItem="15H-Xq-EeW" firstAttribute="leading" secondItem="Mjn-ro-Gwe" secondAttribute="leading" constant="10" id="ya3-NY-nns"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ap9-3a-QW6">
+                    <rect key="frame" x="30" y="548" width="333" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qVK-FD-h1x">
+                            <rect key="frame" x="10" y="0.0" width="313" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="qVK-FD-h1x" firstAttribute="leading" secondItem="Ap9-3a-QW6" secondAttribute="leading" constant="10" id="B1D-rd-Lvs"/>
+                        <constraint firstAttribute="height" constant="50" id="FX2-cC-CB5"/>
+                        <constraint firstItem="qVK-FD-h1x" firstAttribute="top" secondItem="Ap9-3a-QW6" secondAttribute="top" id="GbH-Cx-iPP"/>
+                        <constraint firstAttribute="bottom" secondItem="qVK-FD-h1x" secondAttribute="bottom" id="arQ-YY-rws"/>
+                        <constraint firstAttribute="trailing" secondItem="qVK-FD-h1x" secondAttribute="trailing" constant="10" id="lo2-wA-Acc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLu-Rt-3bO">
+                    <rect key="frame" x="40" y="628" width="313" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="p51-wL-5XD"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="loginPressed:" destination="-1" eventType="touchUpInside" id="IYn-xa-Q3P"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etn-IM-sSU">
+                    <rect key="frame" x="176.66666666666666" y="728" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4gE-IV-Dab"/>
+                        <constraint firstAttribute="width" constant="40" id="Lu2-Km-7ID"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="google-icon"/>
+                    <connections>
+                        <action selector="googleSignInButton:" destination="-1" eventType="touchUpInside" id="f0v-Px-Bfl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cua-Yj-moa">
+                    <rect key="frame" x="175.66666666666666" y="397" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniciar sesion con Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7p-86-OUo">
+                    <rect key="frame" x="119.00000000000001" y="771" width="155.33333333333337" height="15.666666666666629"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="q7p-86-OUo" firstAttribute="centerX" secondItem="etn-IM-sSU" secondAttribute="centerX" id="7Fe-nQ-inv"/>
+                <constraint firstItem="cua-Yj-moa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CAz-UH-EcI"/>
+                <constraint firstItem="Mjn-ro-Gwe" firstAttribute="top" secondItem="cua-Yj-moa" secondAttribute="bottom" constant="50" id="E1p-OB-QpT"/>
+                <constraint firstItem="bLu-Rt-3bO" firstAttribute="top" secondItem="Ap9-3a-QW6" secondAttribute="bottom" constant="30" id="KJL-Kh-ATS"/>
+                <constraint firstItem="etn-IM-sSU" firstAttribute="top" secondItem="bLu-Rt-3bO" secondAttribute="bottom" constant="50" id="L2N-Vb-6DG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ap9-3a-QW6" secondAttribute="trailing" constant="30" id="M1P-Rw-wPs"/>
+                <constraint firstItem="q7p-86-OUo" firstAttribute="top" secondItem="etn-IM-sSU" secondAttribute="bottom" constant="3" id="Pcu-xc-xLD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="etn-IM-sSU" secondAttribute="bottom" constant="50" id="UQo-Jp-Xbm"/>
+                <constraint firstItem="bLu-Rt-3bO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="dDo-MD-ggu"/>
+                <constraint firstItem="Ap9-3a-QW6" firstAttribute="top" secondItem="Mjn-ro-Gwe" secondAttribute="bottom" constant="30" id="lez-CT-GV2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bLu-Rt-3bO" secondAttribute="trailing" constant="40" id="mMz-BA-AA3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mjn-ro-Gwe" secondAttribute="trailing" constant="30" id="mek-ER-iWx"/>
+                <constraint firstItem="Mjn-ro-Gwe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="rf3-Iz-avL"/>
+                <constraint firstItem="etn-IM-sSU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="svv-yI-5kw"/>
+                <constraint firstItem="Ap9-3a-QW6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="tCH-fA-gxD"/>
+            </constraints>
+            <point key="canvasLocation" x="-153" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="google-icon" width="225" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

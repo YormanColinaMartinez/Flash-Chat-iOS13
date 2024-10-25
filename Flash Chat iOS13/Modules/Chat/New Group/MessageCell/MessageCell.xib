@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="119" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Flash_Chat_iOS13" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="278" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dmv-NW-CUh">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="fmc-Ph-1kA"/>
+                            <constraint firstAttribute="width" constant="40" id="zbs-4Z-hSu"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EMg-T2-sog">
+                        <rect key="frame" x="228" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="2Qf-M0-Qgo"/>
+                            <constraint firstAttribute="height" constant="40" id="CKl-NF-t8l"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGW-ZF-Bpg">
+                        <rect key="frame" x="60" y="10" width="158" height="99"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWa-7c-YnI">
+                                <rect key="frame" x="10" y="10" width="138" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="BrandLightPurple"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandPurple"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BWa-7c-YnI" secondAttribute="trailing" constant="10" id="4Vl-NW-1aQ"/>
+                            <constraint firstAttribute="bottom" secondItem="BWa-7c-YnI" secondAttribute="bottom" constant="10" id="Oqq-D1-ykg"/>
+                            <constraint firstItem="BWa-7c-YnI" firstAttribute="leading" secondItem="JGW-ZF-Bpg" secondAttribute="leading" constant="10" id="Yfb-bz-Mjp"/>
+                            <constraint firstItem="BWa-7c-YnI" firstAttribute="top" secondItem="JGW-ZF-Bpg" secondAttribute="top" constant="10" id="hYJ-zh-heI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EMg-T2-sog" firstAttribute="leading" secondItem="JGW-ZF-Bpg" secondAttribute="trailing" constant="10" id="8hS-Lo-1Ir"/>
+                    <constraint firstItem="EMg-T2-sog" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="AeR-0c-Dic"/>
+                    <constraint firstItem="JGW-ZF-Bpg" firstAttribute="leading" secondItem="Dmv-NW-CUh" secondAttribute="trailing" constant="10" id="InV-1l-H9z"/>
+                    <constraint firstAttribute="trailing" secondItem="EMg-T2-sog" secondAttribute="trailing" constant="10" id="MWi-TM-Mro"/>
+                    <constraint firstItem="JGW-ZF-Bpg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="MfG-Jq-PQi"/>
+                    <constraint firstAttribute="trailing" secondItem="EMg-T2-sog" secondAttribute="trailing" constant="10" id="dei-Ms-Xnv"/>
+                    <constraint firstItem="Dmv-NW-CUh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uOY-ql-aC6"/>
+                    <constraint firstAttribute="bottom" secondItem="JGW-ZF-Bpg" secondAttribute="bottom" constant="10" id="uhp-8T-kWd"/>
+                    <constraint firstItem="Dmv-NW-CUh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ytg-Be-Pdt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="BWa-7c-YnI" id="b3d-cv-apF"/>
+                <outlet property="leftImageView" destination="Dmv-NW-CUh" id="B0Q-eY-rmd"/>
+                <outlet property="messageBubbleView" destination="JGW-ZF-Bpg" id="LLT-05-8FB"/>
+                <outlet property="rigthImageView" destination="EMg-T2-sog" id="SwP-nD-ber"/>
+            </connections>
+            <point key="canvasLocation" x="68.702290076335871" y="46.126760563380287"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BrandLightPurple">
+            <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandPurple">
+            <color red="0.67500001192092896" green="0.43500000238418579" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
